@@ -1,0 +1,164 @@
+//Container devices
+
+$container-xl: 1440px;
+$containrer-l: 1140px;
+$container-m: 960px;
+$container-s: 340px;
+
+//Mixins
+
+@mixin responsive($device) {
+  @if $device==xl {
+    @media screen and (min-width: $container-xl) {
+      @content;
+    }
+  } @else if $device==l {
+    @media screen and (max-width: $container-xl) and (min-width: $container-l) {
+      @content;
+    }
+  } @else if $device==m {
+    @media screen and (max-width: $container-l) and (min-width: $container-m) {
+      @content;
+    }
+  } @else if $device==s {
+    @media screen and (max-width: $container-m) and (min-width: $container-s) {
+      @content;
+    }
+  } @else if $device==xs {
+    @media screen and (max-width: $container-s) {
+      @content;
+    }
+  }
+}
+
+.intro-descarte {
+  background: $primary-normal;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  h1 {
+    font-weight: 100;
+  }
+}
+.project {
+  h1 {
+    font-weight: 100;
+  }
+}
+.item-project {
+  img {
+    width: 15rem;
+    margin: 0 auto;
+  }
+  p {
+    line-height: 32px;
+  }
+  div {
+    padding: 1rem;
+  }
+}
+
+.objective {
+  background: $primary-normal;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  h1 {
+    font-weight: 100;
+  }
+  .item-objective {
+    img {
+      width: 10rem;
+      margin: 0 auto;
+    }
+    p {
+      line-height: 32px;
+    }
+    div {
+      max-width: 200px;
+      width: 100%;
+      padding: 1rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+.apoio {
+  padding-bottom: 2rem;
+  h1 {
+    font-weight: 100;
+  }
+  img {
+    width: 20rem;
+  }
+}
+
+.intro {
+  h1 {
+    font-size: 84px;
+    font-weight: bold;
+  }
+  margin-top: 8rem;
+}
+.line-blue {
+  background: $primary-normal;
+  height: 0.5rem;
+}
+.day {
+  font-weight: 100;
+}
+.schedule {
+  h3 {
+    font-size: 21px;
+    font-weight: 200;
+  }
+  strong {
+    font-weight: 500;
+  }
+}
+.w-90 {
+  max-width: 800px;
+  width: 100%;
+}
+.palestrante {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: $primary-normal;
+  h1 {
+    font-weight: 100;
+  }
+  .img-square {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+.palestrante-gray {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+
+  h1 {
+    font-weight: 100;
+  }
+  .img-square {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+.item-local {
+  span {
+    font-size: 12px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-top: 8px;
+  }
+}
+.local{
+  margin-top: 8rem;
+}
+.fw{
+  font-weight: 100;
+}
+.p-intro{
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}

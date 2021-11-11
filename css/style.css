@@ -1,0 +1,304 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.intro-descarte {
+  background: #23CFF6;
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.intro-descarte h1 {
+  font-weight: 100;
+}
+
+.project h1 {
+  font-weight: 100;
+}
+
+.item-project img {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.item-project p {
+  line-height: 32px;
+}
+
+.item-project div {
+  padding: 1rem;
+}
+
+.objective {
+  background: #23CFF6;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.objective h1 {
+  font-weight: 100;
+}
+
+.objective .item-objective img {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.objective .item-objective p {
+  line-height: 32px;
+}
+
+.objective .item-objective div {
+  max-width: 200px;
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.apoio {
+  padding-bottom: 2rem;
+}
+
+.apoio h1 {
+  font-weight: 100;
+}
+
+.apoio img {
+  width: 20rem;
+}
+
+.intro {
+  margin-top: 8rem;
+}
+
+.intro h1 {
+  font-size: 84px;
+  font-weight: bold;
+}
+
+.line-blue {
+  background: #23CFF6;
+  height: 0.5rem;
+}
+
+.day {
+  font-weight: 100;
+}
+
+.schedule h3 {
+  font-size: 21px;
+  font-weight: 200;
+}
+
+.schedule strong {
+  font-weight: 500;
+}
+
+.w-90 {
+  max-width: 800px;
+  width: 100%;
+}
+
+.palestrante {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background: #23CFF6;
+}
+
+.palestrante h1 {
+  font-weight: 100;
+}
+
+.palestrante .img-square {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.palestrante-gray {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.palestrante-gray h1 {
+  font-weight: 100;
+}
+
+.palestrante-gray .img-square {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.item-local span {
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  margin-top: 8px;
+}
+
+.local {
+  margin-top: 8rem;
+}
+
+.fw {
+  font-weight: 100;
+}
+
+.p-intro {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+h1 {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 37px;
+  line-height: 100%;
+  line-height: 40px;
+}
+
+@media screen and (max-width: 960px) and (min-width: 340px) {
+  h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    line-height: 110%;
+  }
+}
+
+p {
+  color: #212121;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  line-height: 130%;
+  margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 960px) and (min-width: 340px) {
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+
+.btn-1 {
+  border: 0;
+  background-color: #ffffff;
+  color: #000;
+  font-weight: 500;
+  max-width: 20rem;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+.btn-2 {
+  border: 0;
+  background-color: #23CFF6;
+  color: #000;
+  font-weight: 500;
+  max-width: 20rem;
+  width: 100%;
+  padding: 0.4rem;
+  border-radius: 5px;
+  margin-top: 3rem;
+}
+
+sections html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  scroll-behavior: smooth;
+  background: #E6EEF0;
+}
+
+svg,
+img {
+  display: block;
+  width: 100%;
+}
+
+.border {
+  border: 1px solid red;
+}
+
+.img-logo {
+  width: 5rem;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 1rem;
+}
+
+.navbar {
+  /* position: fixed;
+  top: 0;left: 0; */
+  width: 100%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.navbar.sticky {
+  background-color: #4f474e;
+}
+
+.navbar.sticky a, .navbar.sticky p {
+  color: #fff !important;
+}
+
+.navbar .navbar-brand p {
+  font-weight: 300;
+}
+
+.navbar a {
+  color: #212121 !important;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-item {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #23CFF6;
+}
+
+.navbar .navbar-nav .nav-item.active:after {
+  width: 100%;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #7a7c81 !important;
+}
+
+.navbar .navbar-toggler-icon i {
+  font-size: 2rem;
+}
+
+header {
+  background: url("../images/paper.jpg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 8rem;
+}
+/*# sourceMappingURL=style.css.map */

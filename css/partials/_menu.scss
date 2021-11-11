@@ -1,0 +1,63 @@
+.img-logo {
+  width: 5rem;
+  height: auto;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  transition:all 0.5s ease;
+  &.sticky{
+    background-color: #4f474e;
+    a, p{
+      color: #fff !important;
+    }
+  }
+  .navbar-brand {
+    p {
+      font-weight: 300;
+    }
+  }
+  a {
+    color: #212121 !important;
+    font-weight: bold;
+  }
+  .navbar-nav {
+    .nav-item {
+      margin-right: 1rem;
+      position: relative;
+      &:after {
+        content: "";
+        position: absolute;
+
+        bottom: 0;
+        width: 0%;
+        height: 5px;
+        background-color: $primary-normal;
+      }
+      &.active {
+        &:after {
+          width: 100%;
+        }
+      }
+      .nav-link {
+        transition: color 0.2s ease;
+
+        &:hover {
+          color: #7a7c81 !important;
+        }
+      }
+    }
+  }
+  .navbar-toggler-icon {
+    i {
+      font-size: 2rem;
+    }
+  }
+}
+header {
+  background: url("../../images/paper.jpg") no-repeat center;
+  background-size: cover;
+  padding-bottom: 8rem;
+}
